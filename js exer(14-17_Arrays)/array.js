@@ -99,3 +99,108 @@ document.write("<p>c. Last index of the array: " + lastIndex + "</p>");
 document.write("<p>d. Car at last index of the array: " + carAtLastIndex + "</p>");
 
 
+/* 11. Write a program to store 3 student names in an array. Take 
+another array to store score of these three students. Assume 
+that total marks are 500 for each student, display the scores & 
+percentages of students like: */
+
+// Declare an array to store student names
+var studentNames = ["M Hassan Malik", "Uchiha Madara", "Minato "];
+
+// Declare an array to store scores of students
+var scores = [430, 380, 470];
+
+// Assume total marks for each student is 500
+var totalMarks = 500;
+
+// Calculate percentages for each student
+var percentages = [];
+for (var i = 0; i < scores.length; i++) {
+    var percentage = (scores[i] / totalMarks) * 100;
+    percentages.push(percentage.toFixed(2)); // Round the percentage to 2 decimal places
+}
+
+// Display scores and percentages
+document.write("<h2>Student Scores and Percentages:</h2>");
+for (var i = 0; i < studentNames.length; i++) {
+    document.write("<p>" + studentNames[i] + " scored " + scores[i] + " out of " + totalMarks + " with a percentage of " + percentages[i] + "%</p>");
+}
+
+
+/* 12. Initialize an array with color names. Display the array 
+elements in your browser.
+a. Ask the user what color he/she wants to add to the 
+beginning & add that color to the beginning of the array. 
+Display the updated array in your browser.
+b. Ask the user what color he/she wants to add to the end & 
+add that color to the end of the array. Display the updated 
+array in your browser.
+c. Add two more color to the beginning of the array. Display 
+the updated array in your browser
+d. Delete the first color in the array. Display the updated 
+array in your browser.
+e. Delete the last color in the array. Display the updated 
+array in your browser.
+f. Ask the user at which index he/she wants to add a color & 
+color name. Then add the color to desired position/index. 
+. Display the updated array in your browser.
+g. Ask the user at which index he/she wants to delete 
+color(s) & how many colors he/she wants to delete. Then 
+remove the same number of color(s) from user-defined
+position/index. . Display the updated array in your 
+browser. */
+
+// Initialize an array with color names
+var colors = ["Red", "Green", "Blue"];
+
+// Display the array elements in the browser
+document.write("<h3>Original Array: " + colors.join(", ") + "</h3>");
+
+// Ask the user for a color to add to the beginning of the array
+var colorToAddAtBeginning = prompt("Enter a color to add to the beginning:");
+colors.unshift(colorToAddAtBeginning);
+
+// Display the updated array
+document.write("<h3>Array after adding color at the beginning: " + colors.join(", ") + "</h3>");
+
+// Ask the user for a color to add to the end of the array
+var colorToAddAtEnd = prompt("Enter a color to add to the end:");
+colors.push(colorToAddAtEnd);
+
+// Display the updated array
+document.write("<h3>Array after adding color at the end: " + colors.join(", ") + "</h3>");
+
+// Add two more colors to the beginning of the array
+colors.unshift("Yellow", "Purple");
+
+// Display the updated array
+document.write("<h3>Array after adding two colors at the beginning: " + colors.join(", ") + "</h3>");
+
+// Delete the first color in the array
+colors.shift();
+
+// Display the updated array
+document.write("<h3>Array after deleting the first color: " + colors.join(", ") + "</h3>");
+
+// Delete the last color in the array
+colors.pop();
+
+// Display the updated array
+document.write("<h3>Array after deleting the last color: " + colors.join(", ") + "</h3>");
+
+// Ask the user for the index and color to add at that position
+var indexToAdd = parseInt(prompt("Enter the index to add color:"));
+var colorToAdd = prompt("Enter the color to add:");
+colors.splice(indexToAdd, 0, colorToAdd);
+
+// Display the updated array
+document.write("<h3>Array after adding color at index " + indexToAdd + ": " + colors.join(", ") + "</h3>");
+
+// Ask the user for the index and number of colors to delete
+var indexToDelete = parseInt(prompt("Enter the index to delete colors:"));
+var numberOfColorsToDelete = parseInt(prompt("Enter the number of colors to delete:"));
+colors.splice(indexToDelete, numberOfColorsToDelete);
+
+// Display the updated array
+document.write("<h3>Array after deleting colors from index " + indexToDelete + ": " + colors.join(", ") + "</h3>");
+
