@@ -204,3 +204,139 @@ colors.splice(indexToDelete, numberOfColorsToDelete);
 // Display the updated array
 document.write("<h3>Array after deleting colors from index " + indexToDelete + ": " + colors.join(", ") + "</h3>");
 
+/* 13. Write a program to store student scores in an array & sort 
+the array in ascending order using Array’s sort method.  */
+
+// Array to store student scores
+var scores = [320, 230, 480, 120];
+
+// Sorting the array in ascending order
+scores.sort(function(a,b) {
+    return a-b;
+});
+
+// Displaying the sorted scores
+document.write("<h3>Sorted Scores: " + scores.join(", ") + "</h3>");
+
+/* 14. Write a program to sort the below mentioned array:
+var fruits = [“strawberry”, “apple”, “orange”, “banana”];
+ */
+
+var fruit = ["strawberry", "apple", "orange", "banana"];
+fruit.sort();
+
+console.log(fruit);  // Output: ["apple", "banana", "orange", "strawberry"]
+
+/* 15. Write a program to initialize an array with city names. Copy 
+3 array elements from cities array to selectedCities array */
+
+// Initialize an array with city names
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+// Create an empty array to store selected cities
+var selectedCities = [];
+
+// Copy 3 elements from cities array to selectedCities array
+selectedCities = cities.slice(2, 5);
+
+console.log(selectedCities);  
+
+
+/* 16. Write a program to create a single string from the below 
+mentioned array:
+var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+(Use array’s join method) */
+
+var arr = ["This", "is", "my", "cat"];
+var singleString = arr.join(" ");
+
+document.write(singleString);
+// Output: "This is my cat"
+
+
+/* 17. Create a new array. Store values one by one in such a way 
+that you can access the values in the order in which they were 
+stored. (FIFO-First In First Out)
+ */
+
+var fifoArray = [];
+
+// Add elements to the array using push method
+fifoArray.push("keyboard");
+fifoArray.push("mouse");
+fifoArray.push("printer");
+fifoArray.push("monitor");
+
+// Access and remove elements in the order they were stored (FIFO)
+var firstElement = fifoArray.shift(); // Removes and returns "keyboard"
+var secondElement = fifoArray.shift(); // Removes and returns "mouse"
+var thirdElement = fifoArray.shift(); // Removes and returns "printer"
+var fourthElement = fifoArray.shift(); // Removes and returns "monitor"
+console.log(firstElement); 
+console.log(secondElement); 
+console.log(thirdElement); 
+console.log(fourthElement); 
+
+
+/*18. Create a new array. Store values one by one in such a way 
+that you can access the values in reverse order. (Last In-First 
+Out)
+ */
+
+var lifoArray = [];
+
+// Adding elements in LIFO order
+lifoArray.push("keyboard"); 
+lifoArray.push("mouse"); 
+lifoArray.push("printer"); 
+lifoArray.push("monitor");
+
+// Accessing values in reverse order (Last In-First Out)
+var lastElement = lifoArray.pop(); // Removes and returns "fourth"
+var secondLastElement = lifoArray.pop(); // Removes and returns "third"
+var thirdLastElement = lifoArray.pop(); // Removes and returns "two"
+var fourthLastElement = lifoArray.pop(); // Removes and returns "First"
+
+
+console.log(lastElement); 
+console.log(secondLastElement); 
+console.log(thirdLastElement); 
+console.log(fourthLastElement); 
+
+
+/* 19. Write a program to store phone manufacturers (Apple, 
+Samsung, Motorola, Nokia, Sony & Haier) in an array. Display 
+the following dropdown/select menu in your browser using 
+document.write() method: */
+
+var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+document.write('<select>');
+for (var i = 0; i < phoneManufacturers.length; i++) {
+    document.write("<option value='" + phoneManufacturers[i] + "'>" + phoneManufacturers[i] + "</option>");
+}
+document.write('</select>');
+
+/* phoneManufacturers.forEach(manufacturer => {
+    document.write(`<option value="${manufacturer}">${manufacturer}</option>`);
+}); another way */
+
+/*20. Declare and initialize an empty multidimensional array.
+(Array of arrays) */
+
+var multiDimensionalArray = [];
+multiDimensionalArray.push([1, 2, 3]); // Adds an array [1, 2, 3] to the multidimensional array
+multiDimensionalArray.push(["apple", "banana", "orange"]); // Adds an array ["apple", "banana", "orange"] to the multidimensional array
+
+/* 21. Declare and initialize a multidimensional array representing
+the following matrix:
+0 1 2 3
+1 0 1 2
+2 1 0 1 */
+
+var matrix = [
+    [0, 1, 2, 3],
+    [1, 0, 1, 2],
+    [2, 1, 0, 1]
+];
+
+console.log(matrix);
