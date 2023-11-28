@@ -20,11 +20,55 @@ let userInput = parseFloat(prompt("Enter a number to  print it's multiplication 
 let userInput2 = parseFloat(prompt("Enter length of multiplication table"));
 
 document.write(`<h2>Multiplication Table for ${userInput}</h2>`)
-if () {
-    
-}
+
 for (let i = 1; i <= userInput2; i++) {
     let result = userInput * i;
     document.write(`<h3>${userInput} X ${i} = ${result} </h3>`)
     
 }
+
+
+/* 4. You have an array
+A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”]
+Write each element on new line with the help of for loop.
+ */
+
+A = ["Nokia", "Samsung" , "Apple", "Sony", "Huawei"];
+
+for (let index = 0; index < A.length; index++) {
+    const element = A[index];
+    document.write(`<h3>${element}</h3>`);
+}
+
+/* 5. Write a program to print items of the following array using for 
+loop:
+fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”] */
+
+fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+
+for (let index = 0; index < fruits.length; index++) {
+    const element = fruits[index];
+      document.write(`<h3>${element}</h3>`)
+      document.write(`<h3>Element at index ${index} is ${fruits[index]}</h3>`)    
+}  
+
+let firstStatementResult = ""; // Variable to store the results of the first statements
+
+for (let index = 0; index < fruits.length; index++) {
+    const element = fruits[index];
+
+    // Accumulate the results of the first statement
+    firstStatementResult += `<h3>${element}</h3>`;
+}
+
+// Write the accumulated results of the first statement to the document
+document.write(firstStatementResult);
+
+// Now, display the second statements
+for (let index = 0; index < fruits.length; index++) {
+    // Display the second statement
+    document.write(`<h3>Element at index ${index} is ${fruits[index]}</h3>`);
+}
+
+
+
