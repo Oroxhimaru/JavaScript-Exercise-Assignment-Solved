@@ -71,4 +71,27 @@ for (let index = 0; index < fruits.length; index++) {
 }
 
 
+/* 6. Write a program to initialize an array of N items by using 
+prompt. Where N is number of items as entered by the user.
+ */
+
+// Get the number of items from the user
+let N = parseInt(prompt("Enter the number of items:"));
+
+// Check if the entered value is non-negative
+if (N <= 0 || isNaN(N)) {
+    alert("Please enter a positive number.");
+} else {
+    // Initialize an array to store the items
+    let array = [];
+
+    // Prompt the user to enter each item
+    for (let i = 0; i < N; i++) {
+        let item = prompt("Enter item " + (i + 1) + ":");
+        array.push(item);
+    }
+
+    // Display the initialized array
+    document.write("The array of " + N + " items is: " + array.join(", "));
+}
 
