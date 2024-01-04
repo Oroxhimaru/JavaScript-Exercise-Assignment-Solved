@@ -1,0 +1,63 @@
+Scoping Of Var Let And Const
+Truthy And Faisy Values In Js
+== And=== 
+Higher Order Functions
+First Class Fncs
+First Order Fncs
+
+Constructor Functions
+Filter, Reduce,Sort
+Accessing Object ProperEyeeze Object
+Prototype and prototypal Inheritance
+
+Strict Mode JS Hoisting
+This Keyword,Call,Apply,Bind
+What Are Lambda Functions
+Temporal Dead Zone Lourdes
+Sync Vs Async JS Callback FncsPromises,Async and Await
+Event Loop.  Static Vs Dynamic Typed
+Window Object
+
+
+VARIABLES
+Let,Const,Var, Differences Between Them Scoping Of Var Let And Const
+
+TYPES
+Types-primitives And Reference Types In Js
+Typeof Operator
+
+CONDITIONALS
+If Else Else - If In Js Truthy And Faisy Values In Js
+Ternary Operator ==And===
+
+LOOPS
+For, While,Foreach,For-In,For-Of Loop In Js
+
+FUNCTIONS
+Functions, Understand About ESS and ES6 Types And Fncs
+
+Higher Order Functions First Class Function
+First Order Fncs
+Functions, Understand About ES5 and ES6 Types Of Fncs
+Constructor Functions New keyword  Return
+
+
+ARRAYS
+Basics Of Arrays,How They Are Made And How To Access Their Indexes
+
+How Arrays Are Objects
+Push,Pop,Shift, Unshift
+Filter, Reduce,Sort
+
+OBJECTS
+Basics Of Objects,How many Ways To Create Object In Js
+How Js Objects Are Different As Compared To Object In Different Langs.
+
+Properties Vs Methods In Object In Js
+Accessing Object Properties Two Ways
+
+Dot Notation
+Array Bracket Way   Freeze Object
+
+Delete An Object Property
+Prototype and Prototypal Inheritance
